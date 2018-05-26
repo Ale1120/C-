@@ -1,0 +1,76 @@
+Código a utilizar en Práctica de Laboratorio 1
+_______________________________________________
+
+*************************
+Código para operaciones.h
+*************************
+
+#ifndef __OPERACIONES_H
+   #define __OPERACIONES_H
+   int suma(int numero1, int numero2); //función que suma dos números entereos y devuelve su resultado entero
+   int multiplica(int numero1, int numero2); //función que multiplica dos números enteros y devuelve el resultado entero
+   void saluda(char nombre[21]); //función que saluda por pantalla al nombre introducido.  No devuelve valor
+#endif /*__OPERACIONES_H*/
+
+
+***************************
+Código para operaciones.cpp
+***************************
+
+#include "operaciones.h"
+#include "iostream"
+
+using namespace std;
+
+
+//función que suma dos números entereos y devuelve su resultado entero
+int suma(int numero1, int numero2)
+{
+	return numero1+numero2;
+}
+
+//función que multiplica dos números enteros y devuelve el resultado entero
+int multiplica(int numero1, int numero2)
+{
+	return numero1*numero2;
+}
+
+//función que saluda por pantalla al nombre introducido.  No devuelve valor
+void saluda(char nombre[21])
+{
+	cout<<"Hola "<<nombre<<endl;
+}
+
+********************
+Código para main.cpp
+********************
+
+#include "iostream"
+#include "operaciones.h"
+
+using namespace std;
+
+int num1, num2;
+char elnombre[21];
+
+void main( void )
+{
+	cout<<"Introduzca dos numeros a sumar:"<<endl;
+	cin>>num1;
+	cin>>num2;
+	cout<<"El resultado de la suma de "<<num1<<" y "<<num2<<" es: "<<suma(num1,num2)<<endl;
+	cout<<endl;
+
+	cout<<"Ahora introduzca dos numeros a multiplicar:"<<endl;
+	cin>>num1;
+	cin>>num2;
+	cout<<"El resultado del producto de "<<num1<<" y "<<num2<<" es: "<<multiplica(num1,num2)<<endl;
+	cout<<endl;
+
+	cout<<"Escriba su nombre: ";
+	cin>>elnombre;
+	saluda(elnombre);
+	cout<<endl;
+
+	system("pause");
+}
