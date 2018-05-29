@@ -10,6 +10,18 @@ Persona::Persona(string _cedula, string _nombre, string _apellido){
 	apellido = _apellido;
 }
 
+string Persona::getCedula(){
+	return cedula;
+}
+
+string Persona::getNombre(){
+	return nombre;
+}
+
+string Persona::getApellido(){
+	return apellido;
+}
+
 void Persona::setCalleAvenida(string _calleAvenida){
 	direccion.setCalle(_calleAvenida);
 }
@@ -57,11 +69,11 @@ void Persona::setUrbanizacion(string _urbanizacion){
  string Persona::getUrbanizacion(){
  	return direccion.getNbUrbanizacion();
  }
- 
+
  void Persona::setCiudad(string _cuidad){
  	direccion.setNbCiudad(_cuidad);
  }
- 
+
 string Persona::getCiudad(){
 	return direccion.getNbCiudad();
 }

@@ -8,11 +8,14 @@
 			string nombre;
 			string apellido;
 			Direccion direccion;
-			
-		//Métodos
+
+		//Mï¿½todos
 		public:
 			Persona();
 			Persona(string,string,string);
+			string getCedula();
+			string getNombre();
+			string getApellido();
 			void setCalleAvenida(string);
 			string getCalleAvenida();
 			void setNumbParcela(int);
@@ -26,5 +29,5 @@
 			void setUrbanizacion(string);
 			string getUrbanizacion();
 			void setCiudad(string);
-			string getCiudad();	
+			string getCiudad();
 	};
