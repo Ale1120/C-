@@ -4,7 +4,7 @@ int main() {
 
 	cout<<"PERSONA"<<endl;
 
-	Persona alejandro("22762663","Alejandro","Apellido");
+	Persona alejandro("22762663","Alejandro","Ortegano");
 	alejandro.setCalleAvenida("Norte");
 	alejandro.setNumbParcela(1);
 	alejandro.setNombreCasaEdf("22");
