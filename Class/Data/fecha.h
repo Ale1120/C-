@@ -8,7 +8,7 @@
 		public:
 			Fecha();
 			Fecha(int, int, int);
-			Fecha;long);
+			Fecha(long);
 			void mostrar();
 		
 	};
